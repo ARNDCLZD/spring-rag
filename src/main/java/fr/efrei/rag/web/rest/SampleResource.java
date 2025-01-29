@@ -11,4 +11,5 @@ public class SampleResource {
     public String hello(@PathVariable(value = "value", required = false) final String value){
         return "Hello " + value + " !";
     }
+
 }
