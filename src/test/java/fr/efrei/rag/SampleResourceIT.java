@@ -24,7 +24,7 @@ public class SampleResourceIT {
                 .perform(get(ENTITY_API_URL + "/"+value))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
-                .andExpect(content().string("Hello " + value + "!"));
+                .andExpect(content().string("Hello " + value + " !"));
 
     }
 
