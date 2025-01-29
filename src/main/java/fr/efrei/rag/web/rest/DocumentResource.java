@@ -60,4 +60,11 @@ public class DocumentResource {
         documentService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/documents/chat2/{user}")
+    public String chat2(@RequestBody String query) throws InterruptedException {
+        String result = documentService.chat(query);
+
+        return result;
+    }
 }
